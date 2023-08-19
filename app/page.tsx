@@ -43,7 +43,7 @@ export default function Home() {
             Site is currently under construction!
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            We'll be live with new features shortly!
+            We&apos;ll be live with new features shortly!
           </p>
         </a>
 
