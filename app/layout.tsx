@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Ognjen Stanković | New Tech Blog!",
   description: 'Covering every topic of the tech world!',
+  icons: {
+    icon: "favicon.ico"
+  }
 }
 
 export default function RootLayout({
