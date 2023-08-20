@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.bg_dark_blue{
+  background-color: #0c111c;
+}
+.text_dark_blue{
+  color: #0c111c;
+}
