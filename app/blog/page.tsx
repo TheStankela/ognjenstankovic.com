@@ -2,8 +2,16 @@ import React from 'react'
 import Image from 'next/image'
 import Connect from '@/components/Connect'
 import Newsletter from '@/components/Newsletter'
+import { getPostsMeta } from '@/lib/posts'
 
-export default function Blog() {
+export default async function Blog() {
+    const posts = await getPostsMeta();
+
+    if(!posts){
+        return <p className='mt-10 text-center'>
+            Sorry, no posts available.
+        </p>
+    }
   return (
         <section className="pb-12 bg-gray-900">
         <Newsletter />
@@ -12,6 +20,7 @@ export default function Blog() {
                 <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-white">Blog</h2>
             </div> 
                 <div className="grid gap-8 max-w-screen-md mx-auto">
+                   {posts.map(post => (
                     <article className="p-6 rounded-lg border  shadow-md bg-gray-800 border-gray-700 ">
                         <div className="flex justify-between items-center mb-5 text-gray-500">
                             <span className="text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded bg-primary-200 text-primary-800">
@@ -34,12 +43,13 @@ export default function Blog() {
                                     Ognjen Stankovic
                                 </span>
                             </div>
-                            <a href="#" className="inline-flex items-center font-medium text-white hover:underline">
+                            <a href={`/${post.id}`} className="inline-flex items-center font-medium text-white hover:underline">
                                 Read more
                                 <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </a>
                         </div>
                     </article> 
+                    ))} 
                     <article className="p-6 rounded-lg border shadow-md bg-gray-800 border-gray-700">
                         <div className="flex justify-between items-center mb-5 text-gray-500">
                             <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded bg-primary-200 text-primary-800">
