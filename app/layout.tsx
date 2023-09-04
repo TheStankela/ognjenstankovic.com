@@ -26,7 +26,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className + ' bg_dark_blue'}>
         <Navbar />
-        <main className='px-8 py-12 prose prose-xl prose-slate dark:prose-invert mx-auto'>
+        <main className='prose-xl prose-slate dark:prose-invert mx-auto'>
           {children}
         </main>
         <Footer />

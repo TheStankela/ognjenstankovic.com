@@ -18,7 +18,7 @@ export default function Feed() {
                   <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight text-white"><a href="#">How to quickly deploy a static website</a></h2>
-              <p className="mb-5 font-light text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
+              <p className="mb-5 text-justify font-light text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
               <div className="flex justify-between items-center">
               <div className="flex items-center space-x-4">
                       <Image 
@@ -46,7 +46,7 @@ export default function Feed() {
                   <span className="text-sm">14 days ago</span>
               </div>
               <h2 className="mb-2 text-2xl font-bold tracking-tight  text-white"><a href="#">Our first project with React</a></h2>
-              <p className="mb-5 font-light  text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
+              <p className="mb-5 font-light text-justify  text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
               <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-4">
                       <Image 

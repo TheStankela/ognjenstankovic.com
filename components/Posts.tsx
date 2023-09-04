@@ -11,11 +11,9 @@ export default async function Posts() {
   
     return (
     <section className='mt-6 mx-auto max-w-2xl'>
-        <ul className='w-full list-none p-0'>
-            {posts.map(post => (
-                <li>{post.id} {post.date} {post.title}</li>
-            ))}
-        </ul>
+        {posts.map(post => (
+            post.title
+        ))}
     </section>
   )
 }

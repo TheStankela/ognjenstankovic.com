@@ -52,22 +52,24 @@ export default async function page({params: {postId}}: Props){
   
   return (
    <>
-   <h2 className='text-3xl mt-4 mb-0'>{meta.title}</h2>
-   <p className='mt-0 text-sm'>
-    {pubDate}
-   </p>
-   <article>
-    {content}
-   </article>
-   <section>
-    <h3>Related:</h3>
-    <div className='flex flex-row gap-4'>
-      {tags}
-    </div>
-   </section>
-   <p className='mb-10'>
-    <Link href="/">Back to home</Link>
-   </p>
+   <div className='px-8 py-12 prose prose-xl prose-slate dark:prose-invert mx-auto'>
+    <h2 className='text-3xl mt-4 mb-0'>{meta.title}</h2>
+    <p className='mt-0 text-sm'>
+      {pubDate}
+    </p>
+    <article>
+      {content}
+    </article>
+    <section>
+      <h3>Related:</h3>
+      <div className='flex flex-row gap-4'>
+        {tags}
+      </div>
+    </section>
+    <p className='mb-10'>
+      <Link href="/">Back to home</Link>
+    </p>
+   </div>
    </>
   )
 }
