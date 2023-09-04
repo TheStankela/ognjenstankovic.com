@@ -11,7 +11,14 @@ const nextConfig = {
                 port: '',
                 pathname: '/thestankela/blogposts/main/images/**'
         }
-    ]
+    ],
+    domains: [
+        "localhost:3000",
+        "localhost",
+        "ognjenstankovic.com",
+        "githubusercontent.com",
+        "raw.githubusercontent.com"
+    ],
     }
 }
 
