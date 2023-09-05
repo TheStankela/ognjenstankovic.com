@@ -4,7 +4,7 @@ type Meta = {
     date: string;
     tags: string[];
     // dateISO: string;
-    // excerpt: string;
+    // description: string;
     // readingTime: string;
     // coverImage: string;
     // coverImageUrl: string;
