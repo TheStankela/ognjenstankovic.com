@@ -27,13 +27,13 @@ const Navbar = () => {
             <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 bg-gray-800 md:bg-gray-900">
                 <li>
-                    <Link href="blog" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-gray-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Blog</Link>
+                    <Link href="/blog" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-gray-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Blog</Link>           
                 </li>
                 <li>
-                    <Link href="sponsorship" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-gray-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Sponsorship</Link>
+                    <Link href="/sponsorship" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-gray-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Sponsorship</Link>
                 </li>
                 <li>
-                    <Link href="about" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-gray-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">About</Link>
+                    <Link href="/about" className="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-gray-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">About</Link>
                 </li>
                 </ul>
             </div>
