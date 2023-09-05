@@ -17,7 +17,9 @@ const nextConfig = {
         "localhost",
         "ognjenstankovic.com",
         "githubusercontent.com",
-        "raw.githubusercontent.com"
+        "raw.githubusercontent.com",
+        "api.github.com",
+        "github.com"
     ],
     }
 }
