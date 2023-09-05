@@ -1,9 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Connect from '@/components/Connect'
-import Newsletter from '@/components/Newsletter'
 import { getPostsMeta } from '@/lib/posts'
-import Posts from '@/components/Posts'
 
 export default async function Blog() {
     const posts = await getPostsMeta();
