@@ -4,7 +4,7 @@ export default function Connect() {
   return (
     <section className="pb-10 bg_dark_blue">
     <div className="py-8 lg:py-16 mx-auto max-w-screen-md">
-        <h2 className="mb-8 lg:mb-16 text-xl font-bold tracking-tight leading-tight text-center text-white md:text-3xl">Let's Connect:</h2>
+        <h2 className="mb-8 lg:mb-16 text-xl font-bold tracking-tight leading-tight text-center text-white md:text-3xl">Let&apos;s Connect:</h2>
         <div className="grid px-24 grid-cols-3 text-gray-400">
             
             <a href="https://www.linkedin.com/in/ognjenstankovich/" className="flex justify-center items-center">

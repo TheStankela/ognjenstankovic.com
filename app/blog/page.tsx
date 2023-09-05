@@ -34,7 +34,7 @@ export default async function Blog() {
             </div> 
                 <div className="grid gap-8 max-w-screen-md mx-auto">
                    {posts.map(post => (
-                    <BlogArticle postId={post.id} 
+                    <BlogArticle key={post.id} postId={post.id} 
                     date={post.date} 
                     title={post.title} 
                     description={'Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.'} 
