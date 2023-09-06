@@ -4,7 +4,7 @@ import notFound from '@/app/not-found'
 import Link from 'next/link'
 import getFormattedDate from '@/lib/getFormattedDate'
 
-export const revalidate = 0
+export const revalidate = 10
 
 type Props = {
   params: {
@@ -52,7 +52,7 @@ export default async function page({params: {postId}}: Props){
   
   return (
    <>
-   <div className='px-8 py-12 prose prose-xl prose-slate dark:prose-invert mx-auto'>
+   <div className='px-8 py-12 prose prose-xl prose-invert mx-auto'>
     <h2 className='text-3xl mt-4 mb-0'>{meta.title}</h2>
     <p className='mt-0 text-sm'>
       {pubDate}

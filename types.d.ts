@@ -3,11 +3,10 @@ type Meta = {
     title: string;
     date: string;
     tags: string[];
-    // dateISO: string;
-    // description: string;
-    // readingTime: string;
-    // coverImage: string;
-    // coverImageUrl: string;
+    description: string;
+    coverImage: string;
+    coverImageUrl: string;
+    readingTime: string;
 }
 
 type BlogPost = {

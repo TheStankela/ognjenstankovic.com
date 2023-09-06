@@ -4,7 +4,7 @@ import React from 'react'
 export default function page() {
   return (
     <section className='bg-dark_gray'>
-        <div className="mx-auto py-12  max-w-screen-md">
+        <div className="mx-auto py-12 text-white  max-w-screen-md">
                 <h1 className="py-10 text-center text-4xl font-medium">
                     Ognjen Stankovic Blog Sponsorship Opportunities
                 </h1>

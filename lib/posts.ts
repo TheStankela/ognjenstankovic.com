@@ -6,6 +6,7 @@ import 'highlight.js/styles/github-dark.css'
 import Video from '@/components/Video';
 import CustomImage from '@/components/CustomImage';
 
+
 type Filetree = {
     "tree": [
         {
@@ -32,7 +33,14 @@ Promise<BlogPost | undefined> {
     if(rawMDX === '404: Not Found') return undefined;
 
     const {frontmatter, content} = await compileMDX<{ 
-        title: string, date: string, tags: string[] }>({
+        title: string, 
+        date: string, 
+        tags: string[]
+        description: string,
+        coverImage: string,
+        coverImageUrl: string,
+        readingTime: string
+        }>({
             source: rawMDX,
             components: {
                 Video,
@@ -56,8 +64,14 @@ Promise<BlogPost | undefined> {
 
     const blogPostObj: BlogPost = {
         meta: {
-            id, title: frontmatter.title,
-        date: frontmatter.date, tags: frontmatter.tags
+            id, 
+            title: frontmatter.title,
+            date: frontmatter.date,
+            tags: frontmatter.tags,
+            description: frontmatter.description,
+            coverImage: frontmatter.coverImage,
+            coverImageUrl: frontmatter.coverImageUrl,
+            readingTime: frontmatter.readingTime
               },
         content
     }

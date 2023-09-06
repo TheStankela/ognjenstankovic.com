@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body className='bg_dark_blue'>
         <Navbar />
-        <main className='prose-xl prose-slate dark:prose-invert mx-auto transition-all'>
+        <main >
           {children}
         </main>
         <Footer />
