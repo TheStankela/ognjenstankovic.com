@@ -28,6 +28,11 @@
       "static/chunks/main-app.js",
       "static/css/app/blog/[postId]/page.css",
       "static/chunks/app/blog/[postId]/page.js"
+    ],
+    "/sponsorship/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/sponsorship/page.js"
     ]
   }
 }
