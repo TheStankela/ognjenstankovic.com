@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,18 +16,18 @@ const Footer = () => {
                     />
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
                 <li>
-                    <Link href="/blog" className="mr-4 hover:underline hover:text-[#2880DA] md:mr-6">Blog</Link>
+                    <a href="/blog" className="mr-4 hover:underline hover:text-[#2880DA] md:mr-6">Blog</a>
                 </li>
                 <li>
-                    <Link href="/sponsorship" className="mr-4 hover:underline hover:text-[#2880DA] md:mr-6">Sponsorship</Link>
+                    <a href="/sponsorship" className="mr-4 hover:underline hover:text-[#2880DA] md:mr-6">Sponsorship</a>
                 </li>
                 <li>
-                    <Link href="/about" className="hover:underline hover:text-[#2880DA] md:mr-6">About</Link>
+                    <a href="/about" className="hover:underline hover:text-[#2880DA] md:mr-6">About</a>
                 </li>
             </ul>
         </div>
         <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8"/>
-        <span className="block text-sm text-center text-gray-400">© 2023 <Link href="/" className="hover:underline">Ognjen Stankovic</Link>. All Rights Reserved.</span>
+        <span className="block text-sm text-center text-gray-400">© 2023 <a href="/" className="hover:underline">Ognjen Stankovic</a>. All Rights Reserved.</span>
     </div>
 </footer>
   )
