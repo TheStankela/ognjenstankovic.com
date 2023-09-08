@@ -8,6 +8,15 @@ type Props = {
     postId: string
   }
 }
+export async function generateStaticParams(){
+  const posts = await getPostsMeta()
+
+  if(!posts) return [];
+
+  return posts.map((post) => ({
+    postId: post.id
+  }))
+}
 
 export async function generateMetadata({params: {postId}}: Props){
 const post = await getPostByName(`${postId}.mdx`)
