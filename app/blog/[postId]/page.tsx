@@ -3,8 +3,6 @@ import { getPostsMeta, getPostByName } from '@/lib/posts'
 import notFound from '@/app/not-found'
 import getFormattedDate from '@/lib/getFormattedDate'
 
-export const revalidate = 10
-
 type Props = {
   params: {
     postId: string
