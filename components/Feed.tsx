@@ -1,12 +1,9 @@
 import { getPostsMeta } from '@/lib/posts'
-import Image from 'next/image'
 import React from 'react'
 import BlogArticle from './BlogArticle';
 
 export default async function Feed() {
     const posts = await getPostsMeta();
-
-    const placeholderDescription = 'Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.';
 
     if(!posts) return (
     <div className='pb-12 bg-gray-900'>
