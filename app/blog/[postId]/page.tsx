@@ -1,7 +1,6 @@
 import React from 'react'
 import { getPostsMeta, getPostByName } from '@/lib/posts'
 import notFound from '@/app/not-found'
-import Link from 'next/link'
 import getFormattedDate from '@/lib/getFormattedDate'
 
 export const revalidate = 10
@@ -10,16 +9,6 @@ type Props = {
   params: {
     postId: string
   }
-}
-
-export async function generateStaticParams(){
-  const posts = await getPostsMeta()
-
-  if(!posts) return [];
-
-  return posts.map((post) => ({
-    postId: post.id
-  }))
 }
 
 export async function generateMetadata({params: {postId}}: Props){
@@ -58,10 +47,6 @@ export default async function page({params: {postId}}: Props){
   if(!meta.readingTime){
     meta.readingTime = "5"
   }
-
-  // const tags = meta.tags.map((tag, i) => (
-  //   <Link key={i} href={`/tags/${tag}`}>{tag}</Link>
-  // ))
   
   return (
    <>
@@ -73,12 +58,6 @@ export default async function page({params: {postId}}: Props){
     <article>
       {content}
     </article>
-    {/* <section>
-      <h3>Related:</h3>
-      <div className='flex flex-row gap-4'>
-        {tags}
-      </div>
-    </section> */}
     <p className='mb-10'>
       <a href="/">Back to home</a>
     </p>
