@@ -18,13 +18,6 @@ export default async function Blog() {
         );
     }
 
-    const totalData = posts.length;
-    const itemsPerPage = 10;
-
-    const totalPages = Math.ceil(totalData / itemsPerPage);
-
-    let currentPage = 1;
-
   return (
       <section className="py-12 bg_dark_gray">
         <div className="pb-8 px-4 mx-auto max-w-screen-xl lg:px-6">
@@ -41,7 +34,7 @@ export default async function Blog() {
                     ))} 
                     <div className="mt-3 text-white font-bold flex justify-center">
                       <a type="button" className="bg-blue-900/90 text-white hover:bg-sky-700 rounded-lg px-3 py-2 cursor-pointer">Prev</a>
-                        <span className='text-white px-3 py-2'>{`${currentPage} / ${totalPages}`}</span>
+                        <span className='text-white px-3 py-2'>1</span>
                       <a type="button" className="bg-blue-900/90 text-white hover:bg-sky-700 rounded-lg px-3 py-2 cursor-pointer">Next</a>
                     </div>                 
                 </div>  
