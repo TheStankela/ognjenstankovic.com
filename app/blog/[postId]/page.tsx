@@ -27,12 +27,21 @@ const post = await getPostByName(`${postId}.mdx`)
 
 if(!post){
   return {
-    title: 'Post Not Found'
+    title: 'Post Not Found',
+    description: 'The page you are looking for does not exist.',
   }
 }
 
 return {
   title: post.meta.title,
+  description: post.meta.description,
+  alternates: {
+    canonical: `/blog/${post.meta.id}`
+  },
+  openGraph: {
+    title: `${post.meta.title}`,
+    url: `https://ognjenstankovic.com/blog/${post.meta.id}`
+  }
 }
 
 }
