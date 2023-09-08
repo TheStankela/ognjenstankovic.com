@@ -46,6 +46,10 @@ export default async function page({params: {postId}}: Props){
 
   const pubDate = getFormattedDate(meta.date);
 
+  if(!meta.readingTime){
+    meta.readingTime = "5"
+  }
+
   // const tags = meta.tags.map((tag, i) => (
   //   <Link key={i} href={`/tags/${tag}`}>{tag}</Link>
   // ))
@@ -53,9 +57,9 @@ export default async function page({params: {postId}}: Props){
   return (
    <>
    <div className='px-8 py-12 prose prose-xl prose-invert mx-auto'>
-    <h2 className='text-3xl mt-4 mb-0'>{meta.title}</h2>
+    <h1 className='text-3xl mt-4 mb-0'>{meta.title}</h1>
     <p className='mt-0 text-sm'>
-      {pubDate}
+      {pubDate}, Read Time: {meta.readingTime} minutes.
     </p>
     <article>
       {content}
